@@ -20,11 +20,11 @@ the code demonstrates the different evelator funtionalities.
 ## Setup
 1. `npm install`
 2. `npm test` to run unit tests
-2. `npm run dev` then go to http://localhost:8080/webpack-dev-server/
+3. `npm run dev` then go to http://localhost:8080/webpack-dev-server/
 
-If 2. does not work 
+If 3. does not work 
 
-3. `webpack` or `npm run watch` locate the build folder and open `index.html`
+4. `webpack` or `npm run watch` locate the build folder and open `index.html`
 
 ## Improvements
 * some class contains methods and properties that are public, but should not be. There seems to be couple of ways to avoid this, but they all seems kinda or walkaroundish.
