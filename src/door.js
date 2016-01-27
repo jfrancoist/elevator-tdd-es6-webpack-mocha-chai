@@ -6,7 +6,7 @@ class Door {
         if(this._state == false)
         {
             this._state = true;
-            console.log("door cloosed");
+            console.log("door opened");
         }
         return this._state;        
     }

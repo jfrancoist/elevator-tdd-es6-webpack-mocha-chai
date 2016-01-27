@@ -1,6 +1,8 @@
 class FloorPanel {    
-    constructor() {        
+    constructor() {   
     }   
+    call_elevator() {        
+    }
     toString() {
         return `FloorPanel says`;
     }
