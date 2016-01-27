@@ -6,7 +6,7 @@ class Door {
         if(this._state == false)
         {
             this._state = true;
-            console.log("Door opened");
+            console.log("door cloosed");
         }
         return this._state;        
     }
@@ -14,7 +14,7 @@ class Door {
         if(this._state == true)
         {
             this._state = false;
-            console.log("Door closing");
+            console.log("door closed");
         }  
         return this._state;        
     }
@@ -22,7 +22,7 @@ class Door {
         return this._state;
     }
     toString() {
-        return `evelator door says`;
+        return `Door says`;
     }
 }
 

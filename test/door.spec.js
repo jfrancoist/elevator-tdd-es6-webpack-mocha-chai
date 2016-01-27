@@ -36,18 +36,3 @@ describe('Door', () => {
   });
   
 });
-
-// jest.dontMock('../src/door.js');
-// 
-// describe('Door', () => {
-//     
-//     import Door from '../src/door.js'
-// 
-//    it('should give a falsely initial state', () => {
-// 
-//        var door = new Door();      
-// 
-//        expect(door.state()).toBe(true);
-//    });
-// 
-// });
