@@ -1,0 +1,25 @@
+{
+  "name": "demo-elevator",
+  "version": "0.0.1",
+  "description": "This is a TDD demo of an elevator using ES6 and WebPack",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel/register",
+    "coverage": "istanbul cover _mocha -- --compilers js:babel/register",
+    "coverage-es6": "babel-node ./node_modules/.bin/isparta cover _mocha"
+  },
+  "keywords": [
+    "tdd",
+    "elevator",
+    "demo"
+  ],
+  "author": "Jean-François",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^5.8.19",
+    "chai": "^3.2.0",
+    "istanbul": "^0.3.17",
+    "mocha": "^2.2.5",
+    "isparta": "^3.0.4"
+  }
+}
