@@ -1,0 +1,12 @@
+$base-color: #7887AB;
+$bg-color : lighten( $base-color, 10% );
+
+.ilike-blue-container {
+    background: $bg-color
+}
+
+select {
+     display : block;
+ }
+ 
+ 

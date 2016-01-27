@@ -1,4 +1,6 @@
 /node_modules/
 /coverage/
 /.vscode/
+/build/
+!/build/index.html
 npm-debug.log
