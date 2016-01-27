@@ -19,6 +19,7 @@ the code demonstrates the different evelator funtionalities.
 
 ## Setup
 1. `npm install`
+2. `npm test` to run unit tests
 2. `npm run dev` then go to http://localhost:8080/webpack-dev-server/
 
 If 2. does not work 
