@@ -6,6 +6,7 @@ class Elevator {
         this._current_position = 0;
         this._door = new Door();        
     }    
+    
     go_to_floor(floor_number) {
         // validate input
         if (typeof floor_number !== 'number' || (typeof floor_number === 'number' && !Number.isInteger(floor_number))) {
@@ -34,14 +35,19 @@ class Elevator {
             this._current_position = j + 1;
             this._door.open();
             this._door.close();
+        }else {
+            this._direction = "GOING NOWHERE";
         }
     }
+    
     get_current_position() {
         return this._current_position;
     }
+    
     get_direction() {
         return this._direction
     }
+    
     toString() {
         return `Elevator says`;
     }

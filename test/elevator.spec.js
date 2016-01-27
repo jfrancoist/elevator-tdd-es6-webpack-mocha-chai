@@ -31,19 +31,30 @@ describe('Elevator', () => {
         });
         
         it('can change direction', () => {                         
-            elevator.go_to_floor(8);  // act
+            elevator.go_to_floor(10);  // act
             elevator.get_direction().should.equal("GOING UP"); // assert 
-            elevator.get_current_position().should.equal(8); // assert
+            elevator.get_current_position().should.equal(10); // assert
             
-            elevator.go_to_floor(5);  // act
+            elevator.go_to_floor(0);  // act
             elevator.get_direction().should.equal("GOING DOWN"); // assert
-            elevator.get_current_position().should.equal(5); // assert
+            elevator.get_current_position().should.equal(0); // assert
         });          
         
         it('should go floor', () => {         
             elevator.go_to_floor(8); // act 
             elevator.get_current_position().should.equal(8); // assert
-        });    
+        }); 
+        
+        
+        it('should go nowhere if same floor is requested', () => {         
+            elevator.go_to_floor(8); // act 
+            elevator.get_direction().should.equal("GOING UP"); // assert
+            elevator.get_current_position().should.equal(8); // assert
+            
+            elevator.go_to_floor(8); // act 
+            elevator.get_direction().should.equal("GOING NOWHERE"); // assert
+            elevator.get_current_position().should.equal(8); // assert
+        });       
     });
 
 });

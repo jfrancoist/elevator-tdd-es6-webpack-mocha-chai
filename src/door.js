@@ -2,6 +2,7 @@ class Door {
     constructor() {
         this._state = false;
     }
+    
     open() {
         if(this._state == false)
         {
@@ -10,6 +11,7 @@ class Door {
         }
         return this._state;        
     }
+    
     close() {
         if(this._state == true)
         {
@@ -18,9 +20,11 @@ class Door {
         }  
         return this._state;        
     }
+    
     state (){
         return this._state;
     }
+    
     toString() {
         return `Door says`;
     }
