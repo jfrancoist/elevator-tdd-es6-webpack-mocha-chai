@@ -1,44 +1,45 @@
 {
-  "name": "demo-elevator",
-  "version": "0.0.1",
-  "description": "This is a TDD demo of an elevator using ES6 and WebPack",
-  "scripts": {
-    "test": "mocha --compilers js:babel/register",
-    "coverage": "istanbul cover _mocha -- --compilers js:babel/register",
-    "coverage-es6": "babel-node ./node_modules/.bin/isparta cover _mocha",
-    "watch": "webpack --watch",
-    "dev": "webpack-dev-server --devtool eval --hot --progress --colors --content-base build",
-    "deploy": "NODE_ENV=production webpack -p"
-  },
-  "keywords": [
-    "tdd",
-    "elevator",
-    "demo"
-  ],
-  "author": "Jean-François Topige",
-  "license": "ISC",
-  "devDependencies": {
-    "babel": "^5.8.19",
-    "babel-core": "^6.0.20",
-    "babel-loader": "^6.0.1",
-    "babel-preset-es2015": "^6.0.15",
-    "chai": "^3.2.0",
-    "css-loader": "^0.23.1",
-    "file-loader": "^0.8.5",
-    "html-loader": "^0.4.0",
-    "isparta": "^3.0.4",
-    "istanbul": "^0.3.17",
-    "mocha": "^2.2.5",
-    "node-sass": "^3.4.2",
-    "sass-loader": "^3.1.2",
-    "style-loader": "^0.13.0",
-    "url-loader": "^0.5.7",
-    "webpack": "^1.12.12",
-    "webpack-dev-server": "^1.14.1"
-  },
-  "dependencies": {
-    "jquery": "^2.2.0",
-    "materialize-css": "^0.97.5",
-    "mustache": "^2.2.1"
-  }
+    "name": "demo-elevator",
+    "version": "0.0.1",
+    "description": "This is a TDD demo of an elevator using ES6 and WebPack",
+    "scripts": {
+        "test": "mocha --compilers js:babel/register",
+        "coverage": "istanbul cover _mocha -- --compilers js:babel/register",
+        "coverage-es6": "babel-node ./node_modules/.bin/isparta cover _mocha",
+        "watch": "webpack --watch",
+        "dev": "webpack-dev-server --devtool eval --hot --progress --colors --content-base build",        
+        "postinstall": "webpack --config ./webpack-prod.config.js --progress --colors",
+        "start": "node server.js"
+    },
+    "keywords": [
+        "tdd",
+        "elevator",
+        "demo"
+    ],
+    "author": "Jean-François Topige",
+    "license": "ISC",
+    "devDependencies": {
+        "webpack-dev-server": "^1.14.1"
+    },
+    "dependencies": {
+        "babel": "^5.8.19",
+        "babel-core": "^6.0.20",
+        "babel-loader": "^6.0.1",
+        "babel-preset-es2015": "^6.0.15",
+        "chai": "^3.2.0",
+        "css-loader": "^0.23.1",
+        "file-loader": "^0.8.5",
+        "html-loader": "^0.4.0",
+        "isparta": "^3.0.4",
+        "istanbul": "^0.3.17",
+        "mocha": "^2.2.5",
+        "node-sass": "^3.4.2",
+        "sass-loader": "^3.1.2",
+        "style-loader": "^0.13.0",
+        "url-loader": "^0.5.7",
+        "webpack": "^1.12.12",
+        "jquery": "^2.2.0",
+        "materialize-css": "^0.97.5",
+        "mustache": "^2.2.1"
+    }
 }
