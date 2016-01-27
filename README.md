@@ -17,6 +17,8 @@ the code demonstrates the different evelator funtionalities.
 * elevator give direction in which it's going
 * messages are logged in the console to see where the elevator is going
 
+The application is up and running on [heroku](https://elevator-tdd-demo.herokuapp.com/) with automatic deployment enabled on the release/production branch
+
 ## Setup
 1. `npm install`
 2. `npm test` to run unit tests
@@ -31,6 +33,7 @@ If 3. does not work
 * the modules can be even more spread to allow elevator to accept multiple floor request
 * there should be a call elevator button on each floor
 * react could be use for the front side, due to time contraints and knowledge i didn't put it in
+* deployment pipeline with heroku should also have test running before
 
 References :
 https://onsen.io/blog/mocha-chaijs-unit-test-coverage-es6/
